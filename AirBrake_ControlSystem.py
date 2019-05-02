@@ -171,7 +171,6 @@ GPIO.setup(11,GPIO.OUT)
 
 pwm = GPIO.PWM(11,50) #pin 11, 50 Hz
 
-
 itrCount = 0 #count iteration
 runCon = 1
 while (runCon==1):
@@ -240,5 +239,3 @@ GPIO.cleanup()
 
 np.save((root+stamp+"/Maximum Velocity.npy"),vMax)
 np.save((root+stamp+"/Maximum Height.npy"),hMax)
-
-        
